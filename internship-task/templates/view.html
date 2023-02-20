@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+View Customers
+
+{% endblock %}
+
+{% block body %}
+
+<section>
+
+  <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Current Balance</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for customer in customers %}
+            <tr>
+                <th>{{ customer['name'] }}</th>
+                <td>{{ customer['email'] }}</td>
+                <td>{{ customer['cash'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+    <div id="view-div">
+
+        <form action="/home">
+
+            <button id="view-btn" type="submit" class="btn btn-primary btn-lg">Go Back</button>
+        </form>
+
+    </div>
+    
+</section>
+
+{% endblock %}

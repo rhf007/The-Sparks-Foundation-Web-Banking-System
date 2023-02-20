@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Transfer Record
+
+{% endblock %}
+
+{% block body %}
+<section>
+
+    <table id="mytable" class="table table-striped">
+
+          <thead class="thead-dark">
+              <tr>
+                <th scope="col">From</th>
+                <th scope="col">To</th>
+                <th scope="col">Amount</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              {% for transfer in transfers %}
+              <tr>
+                <th>{{ transfer['first_customer_name'] }}</th>
+                <td>{{ transfer['second_customer_name'] }}</td>
+                <td>{{ transfer['transfer_amount'] }}</td>
+              </tr>
+              {% endfor %}
+          </tbody>
+
+      </table>
+
+    <div id="transfertable-div">
+
+      <form action="/home">
+
+          <button id="transfertable-btn" type="submit" class="btn btn-primary btn-lg">Go Back</button>
+
+      </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

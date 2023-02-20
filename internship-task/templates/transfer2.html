@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Transfer
+
+{% endblock %}
+
+{% block body %}
+
+<section>
+
+    <div id="ddd"class="container d-flex min-vw-100 min-vh-100 justify-content-center align-items-center">
+
+        <form class="form-inline" id="transfer2-form" action="/transfertable" method="post">
+
+            <div class="form-group">
+
+              <select class="form-control mx-1 px-auto tselects" name="fromcustomer">
+                <option class="transfer-select" disabled selected>From:</option>
+                {% for customer in customers %}
+                <option class="transfer-select" value="{{customer['name']}}">{{customer["name"]}}</option>
+                {% endfor %}
+              </select>
+
+              <select class="form-control mx-1 px-auto tselects" name="tocustomer">
+                <option class="transfer-select" disabled selected>To:</option>
+                {% for customer in customers %}
+                <option class="transfer-select" value="{{customer['name']}}">{{customer["name"]}}</option>
+                {% endfor %}
+              </select>
+
+              <input class="form-control mx-1 px-auto"type="number" name="amount" placeholder="enter amount" min="1">
+
+              <button id="transfer2-btn" class="btn btn-primary btn-lg" type="submit">Submit</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+  </section>
+  
+{% endblock %}

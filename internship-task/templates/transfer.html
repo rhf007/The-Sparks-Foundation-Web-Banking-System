@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Transfer
+
+{% endblock %}
+
+{% block body %}
+
+<section>
+
+    <table class="table table-striped">
+
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Current Balance</th>
+                <th scope="col">Transfer</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for custinfo in custinfos %}
+            <tr>
+                <th>{{ custinfo['name'] }}</th>
+                <td>{{ custinfo['email'] }}</td>
+                <td>{{ custinfo['cash'] }}</td>
+                <td>
+                    <form action="/transfer2">
+                        <button  type="submit" class="btn btn-primary btn-sm transfer-btn">Transfer</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+</section>
+
+{% endblock %}

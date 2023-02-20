@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+}
+
+
+section{
+    padding:0;
+}
+
+#index-section{
+    padding: 100px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(money.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+ #index-div {
+    height: auto;
+    width: 75%;
+    position: relative;
+    padding-top: 5%;
+    padding-left: 20%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+#index-div h1{
+    font-size:5em;
+    font-weight:500;
+    color:black;
+}
+
+#index-div h3{
+    font-size:3em;
+    font-weight:500;
+    color:black;
+}
+
+#index-div p{
+    font-size:1.5em;
+    font-weight:500;
+    color:black;
+
+}
+
+.index-form{
+    padding-bottom:16px;
+}
+
+.index-buttons{
+    display: inline-block;
+    background-color:#40788C;
+    border:#40788C;
+    transition: 0.7s ease;
+}
+
+.index-buttons:hover{
+    color:white;
+    background-color: #274854;
+    border-color:#274854;
+    transform: scale(1.05);
+}
+#view-div{
+    padding-top:16px;
+    text-align:center;
+}
+
+#view-btn{
+    display: inline-block;
+    font-size:24px;
+    background-color: #343a40;
+    border-color: #454d55;
+    transition: 0.7s ease;
+}
+
+#view-btn:hover{
+    color:black;
+    background-color: #989788;
+    border-color:#989788;
+    transform: scale(1.05);
+}
+
+.transfer-btn{
+    background-color: #343a40;
+    border-color: #454d55;
+}
+
+.transfer-btn:hover{
+    color:black;
+    background-color: #F0ECE5;
+    border-color:#F0ECE5;
+
+}
+
+#ddd{
+    background-color:#F0ECE5;
+}
+
+.tselects{
+    width:25%;
+}
+
+#transfer2-btn{
+    background-color: #343a40;
+    border-color: #454d55;
+}
+#transfer2-btn:hover{
+    color:white;
+    background-color: #1C1F22;
+    border-color:#1C1F22;
+}
+#transfertable-div{
+    padding-top:16px;
+    text-align:center;
+}
+#transfertable-btn{
+    display: inline-block;
+    font-size:24px;
+    background-color: #343a40;
+    border-color: #454d55;
+    transition: 0.7s ease;
+}
+#transfertable-btn:hover{
+    color:black;
+    background-color: #989788;
+    border-color:#989788;
+    transform: scale(1.05);
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Banking System
+
+{% endblock %}
+
+{% block body %}
+<section id="index-section">
+
+    <div id="index-div">
+
+        <h1>Welcome!</h1>
+
+        <h3>This is my Basic Banking System</h3>
+
+        <p>This is my very first basic banking system that I built during my internship with The Sparks Foundation. It's been a pleasure to work on it!</p>
+
+        <p>This banking system provides ability to see customers' info and details and allows money transfer between two customers.</p>
+
+
+        <form class="index-form" action="/view">
+            <button id="btn1" type="submit" class="btn btn-primary btn-lg index-buttons">View All Customers</button>
+        </form>
+
+
+        <form class="index-form" action="/transfer">
+            <button id="btn2" type="submit" class="btn btn-primary btn-lg index-buttons">Transfer Money</button>
+        </form>
+
+
+    </div>
+    
+    </section>
+{% endblock %}
